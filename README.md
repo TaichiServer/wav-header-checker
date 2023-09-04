@@ -13,8 +13,8 @@ WAVファイルのヘッダーをチェックします。
 |17-20|	16	            |    Length of format data as listed above|
 |21-22|	1	              |  Type of format (1 is PCM) - 2 byte integer|
 |23-24|	2	              |  Number of Channels - 2 byte integer|
-|25-28|	44100	          |  Sample Rate - 32 byte integer. Common values are 44100 (CD), 48000 (DAT). Sample Rate = Number of Samples per second, or Hertz.|
-|29-32|	176400	        |    (Sample Rate * BitsPerSample * Channels) / 8.|
+|25-28|	48000	          |  Sample Rate - 32 byte integer. Common values are 44100 (CD), 48000 (DAT). Sample Rate = Number of Samples per second, or Hertz.|
+|29-32|	192000	        |    (Sample Rate * BitsPerSample * Channels) / 8.|
 |33-34|	4	              |  (BitsPerSample * Channels) / 8.1 - 8 bit mono2 - 8 bit stereo/16 bit mono4 - 16 bit stereo|
 |35-36|	16	            |    Bits per sample|
 |37-40|	“data”	         |   “data” chunk header. Marks the beginning of the data section.|
